@@ -20,7 +20,7 @@ function Header() {
     <header className="w-full border-b px-4 sm:px-8 md:px-16 py-3.5 md:py-2">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Logo" width={90} height={70} />
+          <Image src="/logo.png" alt="Logo" width={100} height={70} />
         </div>
 
         <div className="hidden md:flex items-center">

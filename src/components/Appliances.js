@@ -86,7 +86,7 @@ function Appliances() {
 
       <Link
         href="/Appliances"
-        className="mt-6 px-6 py-3 text-white text-base sm:text-lg rounded-md bg-primary hover:bg-primary/90"
+        className="mt-6 px-6 py-3 text-card text-base sm:text-lg rounded-md bg-primary hover:bg-primary/90"
       >
         Browse All Appliances
       </Link>

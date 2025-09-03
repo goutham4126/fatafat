@@ -1,6 +1,5 @@
 "use client"
-
-import { Button } from "./ui/button"
+import Link from "next/link"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Star } from "lucide-react"
 import Image from "next/image"
@@ -55,9 +54,9 @@ function Favourite() {
     return (
       <div className="flex gap-1 px-2">
         {[...Array(fullStars)].map((_, i) => (
-          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          <Star key={i} className="h-4 w-4 fill-chart-4 text-chart-4" />
         ))}
-        {halfStar && <Star className="h-4 w-4 text-yellow-400" />}
+        {halfStar && <Star className="h-4 w-4 text-chart-4" />}
       </div>
     )
   }
@@ -86,7 +85,7 @@ function Favourite() {
                   key={index}
                   className="flex flex-col p-6 rounded-xl border shadow-sm hover:shadow-md transition"
                 >
-                  <div className="w-60 h-32 bg-gray-300 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-60 h-32 bg-ring rounded-lg flex items-center justify-center mb-4">
                   
                   </div>
                   <p className="font-medium p-2">{product.name}</p>
@@ -98,9 +97,9 @@ function Favourite() {
         ))}
       </Tabs>
 
-      <Button className="mt-6 px-8 py-3 text-white text-lg rounded-md bg-primary">
+      <Link href="/" className="mt-6 px-8 py-3 text-card text-lg rounded-md bg-primary">
         View All
-      </Button>
+      </Link>
       <div className="max-md:hidden absolute -bottom-10 right-10">
           <Image
              src="/group3.png"

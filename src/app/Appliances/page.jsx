@@ -84,8 +84,8 @@ export default function Page() {
               <h2 className="text-sm font-medium mb-2">{product.name}</h2>
 
               <div className="flex items-center mb-2">
-                <div className="flex items-center gap-1 bg-yellow-400 text-white px-2 py-0.5 rounded-full text-xs font-medium">
-                  <Star className="w-3 h-3 fill-white" />
+                <div className="flex items-center gap-1 bg-chart-4 text-card px-2 py-0.5 rounded-full text-xs font-medium">
+                  <Star className="w-3 h-3 fill-card" />
                   {product.rating}
                 </div>
               </div>

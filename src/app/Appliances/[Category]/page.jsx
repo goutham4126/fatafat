@@ -115,16 +115,16 @@ export default function Page() {
                 className="text-inherit no-underline"
               >
                 <Card className="p-2">
-                  <div className="bg-gray-100 h-32 rounded mb-2" />
+                  <div className="bg-muted h-32 rounded mb-2" />
                   <CardHeader className="p-0">
-                    <CardTitle className="text-sm font-medium">
+                    <span className="text-sm font-medium">
                       {p.name}
-                    </CardTitle>
+                    </span>
                   </CardHeader>
                   <CardContent className="p-0 text-xs text-muted-foreground">
                     <div className="flex items-center gap-1 mb-1">
-                      <Star className="w-4 h-4 text-yellow-500" />
-                      <span className="font-medium text-black">{p.rating}</span>
+                      <Star className="w-4 h-4 text-chart-4" />
+                      <span className="font-medium text-card-foreground">{p.rating}</span>
                     </div>
                     <div className="flex gap-2 mb-1">
                       <p>{p.tonnage} |</p>

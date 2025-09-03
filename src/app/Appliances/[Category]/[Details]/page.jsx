@@ -50,14 +50,14 @@ export default function Page() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <div className="lg:col-span-4">
-          <div className="bg-gray-100 h-64 sm:h-80 rounded mb-4" />
+          <div className="bg-muted h-64 sm:h-80 rounded mb-4" />
           <div className="flex gap-2">
             {Array(4)
               .fill(null)
               .map((_, idx) => (
                 <div
                   key={idx}
-                  className="bg-gray-100 h-16 sm:h-20 w-1/4 rounded"
+                  className="bg-muted h-16 sm:h-20 w-1/4 rounded"
                 />
               ))}
           </div>
@@ -73,7 +73,7 @@ export default function Page() {
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 text-xs sm:text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
-              <Star className="w-4 h-4 text-yellow-500" />
+              <Star className="w-4 h-4 text-chart-4" />
               <span>4.5 Ratings</span>
             </div>
             <span>2.5k Reviews</span>
@@ -116,7 +116,7 @@ export default function Page() {
               {Array(5)
                 .fill(null)
                 .map((_, idx) => (
-                  <Star key={idx} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
+                  <Star key={idx} className="w-4 h-4 sm:w-5 sm:h-5 text-chart-4" />
                 ))}
             </div>
 
@@ -128,7 +128,7 @@ export default function Page() {
                   className="p-4 sm:p-6 my-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-full bg-gray-200" />
+                    <div className="h-10 w-10 rounded-full bg-input" />
                     <div>
                       <p className="font-medium">Ralph Edwards</p>
                       <p className="text-xs sm:text-sm text-muted-foreground">
@@ -137,7 +137,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-sm">
-                    <Star className="w-4 h-4 text-yellow-500" />
+                    <Star className="w-4 h-4 text-chart-4" />
                     <span>4.5</span>
                   </div>
                 </Card>

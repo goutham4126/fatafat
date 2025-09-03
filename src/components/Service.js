@@ -1,6 +1,5 @@
-import { Button } from "./ui/button"
+import Link from "next/link"
 import Image from "next/image"
-import { Card } from "./ui/card"
 
 function Service() {
   const services=[
@@ -55,7 +54,7 @@ function Service() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
         {services.map((service) => (
           <div key={service.id} className="p-2 flex flex-col items-center">
-            <div className="px-4 pt-4 bg-slate-100 rounded-md mb-4">
+            <div className="px-4 pt-4 bg-muted rounded-md mb-4">
               <Image src={service.image} alt={service.name} width={100} height={100} className="w-32 h-24" /> 
             </div>
             <h2 className="text-sm md:text-medium font-semibold text-center">{service.name}</h2>
@@ -63,9 +62,9 @@ function Service() {
         ))}
       </div>
       <div className="flex justify-center">
-        <Button className="mt-6 px-8 py-3 text-white text-lg rounded-md bg-primary hover:bg-primary/90">
+        <Link href="/" className="mt-6 px-8 py-3 text-card text-lg rounded-md bg-primary hover:bg-primary/90">
           Browse All Services
-        </Button>
+        </Link>
       </div>
     </div>
   )

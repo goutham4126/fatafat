@@ -32,7 +32,7 @@ function Compare() {
           side-by-side. Discover which model best suits <br className="hidden sm:block" />
           your home and budget.
         </p>
-        <Button className="mt-6 px-6 sm:px-8 py-3 text-white text-base sm:text-lg rounded-md bg-primary">
+        <Button className="mt-6 px-6 sm:px-8 py-3 text-card text-base sm:text-lg rounded-md bg-primary">
           Compare Now
         </Button>
       </div>
