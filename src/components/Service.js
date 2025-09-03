@@ -48,7 +48,7 @@ function Service() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center mb-10">
+      <h1 className="text-2xl md:text-4xl font-bold text-center mb-10">
         Find a Quick <span className="text-primary">Service or 
         <br/>
         Repair</span> for Your Appliance</h1>
@@ -58,7 +58,7 @@ function Service() {
             <div className="px-4 pt-4 bg-slate-100 rounded-md mb-4">
               <Image src={service.image} alt={service.name} width={100} height={100} className="w-32 h-24" /> 
             </div>
-            <h2 className="text-medium font-semibold text-center">{service.name}</h2>
+            <h2 className="text-sm md:text-medium font-semibold text-center">{service.name}</h2>
           </div>
         ))}
       </div>

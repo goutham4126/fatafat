@@ -64,13 +64,13 @@ function Favourite() {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center gap-8 py-20">
-      <h1 className="text-center text-4xl font-bold">
+      <h1 className="text-center text-2xl md:text-4xl font-bold">
         People&apos;s <span className="text-primary">Favourite</span>
         <br /> Appliances
       </h1>
 
       <Tabs defaultValue="ac" className="flex justify-center items-center">
-        <TabsList className="flex justify-center mb-6 w-full">
+        <TabsList className="flex flex-wrap gap-2 justify-center md:mb-6 w-full">
           {tabs.map((tab) => (
             <TabsTrigger key={tab.value} value={tab.value} className="px-6">
               {tab.type}
@@ -79,8 +79,8 @@ function Favourite() {
         </TabsList>
 
         {tabs.map((tab) => (
-          <TabsContent key={tab.value} value={tab.value} className="w-full flex">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl">
+          <TabsContent key={tab.value} value={tab.value} className="max-md:mt-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:max-w-7xl">
               {tab.products.map((product, index) => (
                 <div
                   key={index}
@@ -114,4 +114,4 @@ function Favourite() {
   )
 }
 
-export default Favourite
+export default Favourite;

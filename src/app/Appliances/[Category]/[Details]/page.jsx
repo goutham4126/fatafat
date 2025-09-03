@@ -19,7 +19,7 @@ export default function Page() {
   const segments = pathname.split("/").filter(Boolean)
 
   return (
-    <div className="p-6">
+    <div className="p-4 sm:p-6">
       <Breadcrumb className="mb-6">
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -48,25 +48,30 @@ export default function Page() {
         </BreadcrumbList>
       </Breadcrumb>
 
-      <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-4">
-          <div className="bg-gray-100 h-80 rounded mb-4" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="lg:col-span-4">
+          <div className="bg-gray-100 h-64 sm:h-80 rounded mb-4" />
           <div className="flex gap-2">
             {Array(4)
               .fill(null)
               .map((_, idx) => (
-                <div key={idx} className="bg-gray-100 h-20 w-1/4 rounded" />
+                <div
+                  key={idx}
+                  className="bg-gray-100 h-16 sm:h-20 w-1/4 rounded"
+                />
               ))}
           </div>
         </div>
 
-        <div className="col-span-8">
-          <span className="px-3 py-1 bg-primary-foreground text-primary rounded-full text-sm">
+        <div className="lg:col-span-8">
+          <span className="px-3 py-1 bg-primary-foreground text-primary rounded-full text-xs sm:text-sm">
             Air Conditioner
           </span>
-          <h1 className="text-2xl font-semibold mt-2 mb-2">Voltas AC 1.2 Ton</h1>
+          <h1 className="text-xl sm:text-2xl font-semibold mt-2 mb-2">
+            Voltas AC 1.2 Ton
+          </h1>
 
-          <div className="flex items-center gap-4 mb-4 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 text-xs sm:text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
               <Star className="w-4 h-4 text-yellow-500" />
               <span>4.5 Ratings</span>
@@ -77,7 +82,7 @@ export default function Page() {
 
           <div className="mb-6">
             <h3 className="font-medium mb-2">Highlights</h3>
-            <div className="grid grid-cols-2 gap-y-2 text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm">
               {Array(6)
                 .fill("Attr 1:")
                 .map((attr, idx) => (
@@ -86,14 +91,16 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex gap-4 mb-6">
-            <Button variant="outline">Find Seller</Button>
-            <Button>Compare</Button>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
+            <Button variant="outline" className="w-full sm:w-auto">
+              Find Seller
+            </Button>
+            <Button className="w-full sm:w-auto">Compare</Button>
           </div>
 
           <div className="mb-6">
             <h3 className="font-medium mb-2">Specifications</h3>
-            <div className="grid grid-cols-2 gap-y-2 text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm">
               {Array(6)
                 .fill("Attr 1:")
                 .map((attr, idx) => (
@@ -104,24 +111,29 @@ export default function Page() {
 
           <div>
             <h3 className="font-medium mb-2">Reviews & Ratings</h3>
-            <div className="text-xl font-semibold">4.5</div>
+            <div className="text-lg sm:text-xl font-semibold">4.5</div>
             <div className="flex items-center my-2">
               {Array(5)
                 .fill(null)
                 .map((_, idx) => (
-                  <Star key={idx} className="w-5 h-5 text-yellow-500" />
+                  <Star key={idx} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
                 ))}
             </div>
 
             {Array(2)
               .fill(null)
               .map((_, idx) => (
-                <Card key={idx} className="p-6 my-3 flex flex-row items-center justify-between">
+                <Card
+                  key={idx}
+                  className="p-4 sm:p-6 my-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                >
                   <div className="flex items-center gap-3">
                     <div className="h-10 w-10 rounded-full bg-gray-200" />
                     <div>
                       <p className="font-medium">Ralph Edwards</p>
-                      <p className="text-sm text-muted-foreground">Created this task</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">
+                        Created this task
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-sm">
