@@ -1,48 +1,48 @@
 import { Button } from "./ui/button"
-import { Card } from "./ui/card"
 import Image from "next/image"
+import { Card } from "./ui/card"
 
 function Service() {
   const services=[
     {
       id:1,
-      name:'Washing Machine Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Air Conditioner Repair',
+      image:'/repair1.png',
     },
     {
       id:2,
-      name:'Refrigerator Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Washing Machine Repair',
+      image:'/repair2.png',
     },
     {
       id:3,
-      name:'Air Conditioner Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'TV Repair',
+      image:'/repair3.png',
     },
     {
       id:4,
-      name:'Microwave Oven Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Refrigerator Repair',
+      image:'/repair4.png',
     },
     {
       id:5,
-      name:'Washing Machine Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Air Conditioner Repair',
+      image:'/repair1.png',
     },
     {
       id:6,
-      name:'Refrigerator Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Washing Machine Repair',
+      image:'/repair2.png',
     },
     {
       id:7,
-      name:'Air Conditioner Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'TV Repair',
+      image:'/repair3.png',
     },
     {
       id:8,
-      name:'Microwave Oven Repair',
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafiXZqya7Qh7F-5pwea-lu52IYnyQyWIpQw&s',
+      name:'Refrigerator Repair',
+      image:'/repair4.png',
     },
   ]
 
@@ -55,8 +55,8 @@ function Service() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
         {services.map((service) => (
           <div key={service.id} className="p-2 flex flex-col items-center">
-            <div className="p-4 shadow-lg bg-white rounded-md mb-4">
-              <Image src={service.image} alt={service.name} width={200} height={200} className="mb-4 w-[100%]" /> 
+            <div className="px-4 pt-4 bg-slate-100 rounded-md mb-4">
+              <Image src={service.image} alt={service.name} width={100} height={100} className="w-32 h-24" /> 
             </div>
             <h2 className="text-medium font-semibold text-center">{service.name}</h2>
           </div>

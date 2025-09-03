@@ -5,9 +5,9 @@ import { Button } from "./ui/button"
 
 function Compare() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-accent-foreground text-card h-screen px-8 md:px-16 mt-12">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-accent-foreground text-card h-screen px-8 md:px-20 mt-12">
     
-      <div className="max-w-lg">
+      <div className="max-w-lg mb-24">
         <h2 className="font-bold text-4xl">Compare Appliances</h2>
         <h1 className="font-bold text-5xl mt-2">Find the Perfect Fit</h1>
         <p className="mt-4 text-lg leading-relaxed">
@@ -23,7 +23,7 @@ function Compare() {
 
       <div className="flex-shrink-0">
         <Image
-          src="https://st3.depositphotos.com/3332767/17677/i/450/depositphotos_176774242-stock-photo-repairman-making-a-call-me.jpg"
+          src="/Frame.png"
           alt="Repairman making a call"
           width={500}
           height={500}

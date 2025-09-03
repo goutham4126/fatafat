@@ -52,7 +52,7 @@ function Favourite() {
     const fullStars = Math.floor(rating)
     const halfStar = rating % 1 !== 0
     return (
-      <div className="flex items-center justify-center gap-1">
+      <div className="flex gap-1 px-2">
         {[...Array(fullStars)].map((_, i) => (
           <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
         ))}
@@ -78,17 +78,17 @@ function Favourite() {
         </TabsList>
 
         {tabs.map((tab) => (
-          <TabsContent key={tab.value} value={tab.value} className="w-full flex justify-center">
+          <TabsContent key={tab.value} value={tab.value} className="w-full flex">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl">
               {tab.products.map((product, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center justify-center p-6 rounded-xl border shadow-sm hover:shadow-md transition"
+                  className="flex flex-col p-6 rounded-xl border shadow-sm hover:shadow-md transition"
                 >
                   <div className="w-60 h-32 bg-gray-300 rounded-lg flex items-center justify-center mb-4">
                   
                   </div>
-                  <p className="font-medium text-center">{product.name}</p>
+                  <p className="font-medium p-2">{product.name}</p>
                   {renderStars(product.rating)}
                 </div>
               ))}
