@@ -5,8 +5,25 @@ import { Button } from "./ui/button"
 
 function Compare() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-accent-foreground text-card h-screen px-8 md:px-20 mt-12">
-    
+    <div className="relative flex flex-col md:flex-row items-center justify-between gap-4 bg-accent-foreground text-card h-screen px-8 md:px-20 mt-12">
+      <div className="max-md:hidden absolute -bottom-16 left-20">
+          <Image
+            src="/group10.png"
+            alt="Brand Logo"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
+      </div>
+      <div className="max-md:hidden absolute -top-20 right-10">
+          <Image
+            src="/group6.png"
+            alt="Brand Logo"
+            width={70}
+            height={70}
+            className="object-contain"
+          />
+      </div>
       <div className="max-w-lg mb-24">
         <h2 className="font-bold text-4xl">Compare Appliances</h2>
         <h1 className="font-bold text-5xl mt-2">Find the Perfect Fit</h1>
@@ -27,7 +44,7 @@ function Compare() {
           alt="Repairman making a call"
           width={500}
           height={500}
-          className="rounded-xl shadow-lg object-cover"
+          className="rounded-xl mt-40 shadow-lg object-cover"
         />
       </div>
     </div>

@@ -3,6 +3,7 @@
 import { Button } from "./ui/button"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Star } from "lucide-react"
+import Image from "next/image"
 
 function Favourite() {
   const tabs = [
@@ -62,7 +63,7 @@ function Favourite() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-8 py-20">
+    <div className="relative min-h-screen flex flex-col items-center justify-center gap-8 py-20">
       <h1 className="text-center text-4xl font-bold">
         People&apos;s <span className="text-primary">Favourite</span>
         <br /> Appliances
@@ -100,6 +101,15 @@ function Favourite() {
       <Button className="mt-6 px-8 py-3 text-white text-lg rounded-md bg-primary">
         View All
       </Button>
+      <div className="max-md:hidden absolute -bottom-10 right-10">
+          <Image
+             src="/group3.png"
+             alt="Brand Logo"
+             width={100}
+             height={100}
+             className="object-contain"
+          />
+      </div>
     </div>
   )
 }
